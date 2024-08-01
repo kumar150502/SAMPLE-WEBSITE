@@ -1,0 +1,141 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin-bottom: 0.5em;
+}
+
+.menu-toggle {
+  display: none;
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+/* Menu item styles */
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.menu-item img {
+  width: 150px;
+  height: auto;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+.menu-description {
+  max-width: 600px;
+}
+
+.menu-description h3 {
+  margin-bottom: 0.5em;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav.active ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 1em;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0.5em;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-item img {
+    margin-bottom: 0.5em;
+  }
+}
